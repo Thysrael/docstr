@@ -128,7 +128,7 @@
 
 ;; Trigger
 
-(defcustom docstr-python-modes '(python-mode)
+(defcustom docstr-python-modes '(python-mode python-ts-mode)
   "Python major modes for document string insertion."
   :type 'list
   :group 'docstr)

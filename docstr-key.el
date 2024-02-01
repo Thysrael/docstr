@@ -40,13 +40,13 @@
   :group 'docstr)
 
 (defcustom docstr-key-javadoc-like-modes
-  (append '(c-mode c++-mode objc-mode csharp-mode swift-mode)
+  (append '(c-mode c-ts-mode c++-mode c++-ts-mode objc-mode csharp-mode swift-mode)
           '(java-mode groovy-mode processing-mode)
-          '(javascript-mode js-mode js2-mode js3-mode json-mode rjsx-mode)
+          '(javascript-mode js-mode js-ts-mode js2-mode js3-mode json-mode rjsx-mode)
           '(web-mode php-mode)
-          '(actionscript-mode typescript-mode)
+          '(actionscript-mode typescript-mode typescript-ts-mode)
           '(go-mode scala-mode)
-          '(rust-mode rustic-mode)
+          '(rust-mode rustic-mode rust-ts-mode)
           '(css-mode ssass-mode scss-mode))
   "List of `major-mode' that can be use Javadoc style."
   :type 'list
@@ -59,7 +59,7 @@
   :group 'docstr)
 
 (defcustom docstr-key-sharp-doc-modes
-  '(python-mode ruby-mode sh-mode)
+  '(python-mode python-ts-mode ruby-mode ruby-ts-mode sh-mode)
   "List of `major-mode' that use # as document string prefix."
   :type 'list
   :group 'docstr)

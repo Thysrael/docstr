@@ -84,7 +84,7 @@
 
 ;;; Trigger
 
-(defcustom docstr-ruby-modes '(ruby-mode)
+(defcustom docstr-ruby-modes '(ruby-mode ruby-ts-mode)
   "Ruby major modes for document string insertion."
   :type 'list
   :group 'docstr)
